@@ -1,5 +1,4 @@
 <? get_header(); ?>
-<div style="background-color: #fff;">
 <?php if(have_posts() ) : while(have_posts() ) : the_post(); ?>
     <div class="container">
         <div class="row">
@@ -21,7 +20,5 @@
             </div>
         </div>
     </div>
-</div>
-
 <?php endwhile; endif; ?>
 <? get_footer(); ?>

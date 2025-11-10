@@ -12,31 +12,36 @@ get_header();
       ?>
 
         <?php if ( $post_count === 1 ) : ?>
-          <!-- 🎯 First (latest) post, full width -->
-          <div class="post-style col-12">
+          <!-- 🎯 First (latest) post, image left, content right -->
+          <div class="post-style-newest col-12">
             <a href="<?php the_permalink(); ?>">
-              <?php if ( has_post_thumbnail() ) : ?>
-                <?php the_post_thumbnail( 'large', array( 'class' => 'img-fluid' ) ); ?>
-              <?php endif; ?>
-              <div class="post-content">
-                <h2><?php the_title(); ?></h2>
-                <p><?php the_excerpt(); ?></p>
-                <p class="date-posted">Posted: <?php echo post_time(); ?></p>
+              <div class="post-inner">
+                <?php if ( has_post_thumbnail() ) : ?>
+                  <div class="post-image">
+                    <?php the_post_thumbnail( 'large', array( 'class' => 'img-fluid' ) ); ?>
+                  </div>
+                <?php endif; ?>
+
+                <div class="post-content">
+                  <h2><?php the_title(); ?></h2>
+                  <p><?php the_excerpt(); ?></p>
+                  <p class="date-posted">Posted: <?php echo post_time(); ?></p>
+                </div>
               </div>
             </a>
           </div>
 
         <?php else : ?>
           <!-- 🧱 All other posts, 3 per row -->
-          <div class="post-style col-12 col-md-3">
+          <div class="post-style-old mx-2 col-12 col-md-3">
             <a href="<?php the_permalink(); ?>">
               <?php if ( has_post_thumbnail() ) : ?>
-                <?php the_post_thumbnail( 'medium_large', array( 'class' => 'img-fluid' ) ); ?>
+                <?php the_post_thumbnail( 'medium', array( 'class' => 'img-fluid' ) ); ?>
               <?php endif; ?>
-              <div class="post-content">
+              <div class="post-content-old">
                 <h2><?php the_title(); ?></h2>
                 <p><?php the_excerpt(); ?></p>
-                <p class="date-posted">Posted: <?php echo post_time(); ?></p>
+                <p class="date-posted-old">Posted: <?php echo post_time(); ?></p>
               </div>
             </a>
           </div>

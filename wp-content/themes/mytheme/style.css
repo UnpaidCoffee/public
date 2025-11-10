@@ -154,17 +154,11 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Blog Pages */
 
-.blog-thumbnail {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0;
-}
-
 .blog-thumbnail img {
-    display: block;
-    width: 100%;
-    height: auto;
-    margin-top: 20px;
+  width: 100%;
+  height: 600px;
+  object-fit: cover;  /* Crops instead of stretching */
+  display: block;
 }
 
 /* Blog text body */
@@ -198,9 +192,10 @@ h1, h2, h3, h4, h5, h6 {
 /* Featured Image Caption */
 .blog-caption {
     margin-top: 10px;
-    font-size: 0.95rem;
+    font-size: 1rem;
     color: #bbbbbb;
-    line-height: 1.4;
+    text-align: center;
+    
 }
 
 /* Blog Image Captions */
@@ -208,8 +203,30 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 10px;
     font-size: 0.95rem;
     color: #bbbbbb;
-    line-height: 1.4;
 }
+
+.author-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap; /* keeps it responsive on small screens */
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.author-info img.avatar {
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+}
+
+.author-info .written-by,
+.author-info .date-posted {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #bbbbbb;
+}
+
 
 /* Page.php Styling */
 

@@ -31,7 +31,14 @@
         ) );
         ?>
       </div>
-      
+
+      <!-- Contact Info -->
+    <div class="col-md-4 footer-contact">
+      <h3 class="mb-3">Get in Touch</h3>
+        <ul class="contact-list">
+          <li><a href="mailto:joonas.mankisenmaa@gmail.com">joonas.mankisenmaa@gmail.com</a></li>
+        </ul>
+    　</div>
     </div>
   </div>
 

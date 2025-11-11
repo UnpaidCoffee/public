@@ -369,50 +369,102 @@ h1, h2, h3, h4, h5, h6 {
     width: 600px;
     height: 700px;
     object-fit: cover;
-    border-radius: 8px;
 }
 
 
 /* Footer Styling */
+
 .site-footer {
-    background-color: #efefef;
-    padding: 20px;
+    color: #dddddd;
+    padding: 40px 0 0;
+    margin-top: 40px;
+    font-size: 0.95rem;
+    background-color: #1a1a1a;
 }
 
-.footer-description {
-    display: flex;
-    justify-content: center;
-    align-items: center;     
-    gap: 10px;               
+/* Top columns */
+.site-footer .footer-nav,
+.site-footer .footer-legal {
+    margin-bottom: 20px;
 }
 
-.footer-description p {
-    margin: 0;
-    padding: 0;
+.site-footer h3 {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #f5f5f5;
+    margin-bottom: 1rem;
 }
 
-.footer-nav-list {
-    margin: 0;
-    padding: 0;
-}
-
-.footer-nav-list li {
-    margin: 5px 0;
-    list-style: none;
-}
-
-.footer-nav-list li a {
-    color: #222222;
-    text-decoration: none;
-}
-
+/* Footer nav lists */
+.footer-nav-list,
 .legal-nav-list {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-.footer-legal li a {
-    color: #222222;
+.footer-nav-list li,
+.legal-nav-list li {
+    margin: 4px 0;
+}
+
+/* Links */
+.footer-nav-list li a,
+.legal-nav-list li a {
+    color: #cccccc;
     text-decoration: none;
+    transition: color 0.2s ease, transform 0.2s ease;
+    display: inline-block;
+}
+
+.footer-nav-list li a:hover,
+.legal-nav-list li a:hover {
+    color: #ff354c;
+    transform: translateX(2px);
+}
+
+/* Contact list reset */
+.footer-contact .contact-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contact link spacing */
+.footer-contact .contact-list li {
+    margin-bottom: 6px;
+}
+
+/* Contact link style (now animated like the others) */
+.footer-contact .contact-list li a {
+    color: #cccccc;
+    text-decoration: none;
+    display: inline-block;
+    transition: color 0.25s ease, transform 0.25s ease; /* identical timing */
+}
+
+/* Hover state matches nav + legal */
+.footer-contact .contact-list li a:hover {
+    color: #ff354c;
+    transform: translateX(2px);
+}
+
+/* Divider line above bottom section */
+.site-footer .line-break {
+    border: none;
+    height: 2px;
+    background-color: #ff354c;
+    margin: 10px 0;
+}
+
+/* Bottom row: watermark / description */
+.footer-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #aaaaaa;
 }

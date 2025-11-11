@@ -26,8 +26,6 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Navbar styling */
 
-
-
 .site-header .nav-container {
     display: flex;
     flex-direction: row;
@@ -59,6 +57,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Post Styling */
 
 /* Newest post style */
+
 .post-style-newest a {
     text-decoration: none;
     color: inherit;
@@ -99,6 +98,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Old post style for all but the latest post */
+
 .post-style-old {
     width: 410px;
     background-color: #303030;
@@ -303,6 +303,15 @@ h1, h2, h3, h4, h5, h6 {
 
 .page-content p {
     font-size: 1rem;
+}
+
+/* About Me Page */
+
+.self-portrait img {
+    width: 600px;
+    height: 700px;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
 

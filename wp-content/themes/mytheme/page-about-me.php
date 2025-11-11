@@ -10,7 +10,8 @@
       </figure>
     <?php endif; ?>
 
-    <div class="about-me-text col-6">
+    <div class="about-text col-6">
+        <h1 class="mb-4"><?php the_title(); ?></h1>
         <?php the_content(); ?>
       </div>
     </div>

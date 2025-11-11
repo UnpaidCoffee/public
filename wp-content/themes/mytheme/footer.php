@@ -51,4 +51,8 @@
     </div>
 </footer>   
 <?php wp_footer(); ?>
+
+<script>
+</script>
+
 </body>
